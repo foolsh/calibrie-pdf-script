@@ -7,7 +7,6 @@
 
 find $1 -mindepth 1 -maxdepth 1 -type d | while read -r dir
     do
-        [ -d $dir ]
         cd "$dir"
         echo Entering into $dir and executing exiftool
 
